@@ -14,5 +14,6 @@ const ingredientsRef = ingredients.forEach(el => {
     const list = document.createElement('li');
     list.textContent = el;
     elementRef.appendChild(list)
+    
 });
 
