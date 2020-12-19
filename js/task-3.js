@@ -17,27 +17,39 @@ const images = [
 ];
 
  
-const createGallery = image => { 
-    const superscriptionRef = document.createElement('li');
-    superscriptionRef.marker = 'none';
 
-const imgRef = document.createElement('img');
-    imgRef.src = image.url;
-    imgRef.alt = image.alt;
-    imgRef.style.width = '300px';   
 
-    superscriptionRef.appendChild(imgRef)
 
-return superscriptionRef
-} 
 
-const gallery = images.map(img => createGallery(img))
 
-const galleryRef = document.getElementById("gallery");
-galleryRef.style.display = 'flex';
-console.log(galleryRef);
 
-galleryRef.append(...gallery);
+
+
+
+// =========================================================================
+// Не по ТЗ, но так мне больше нравится 
+
+// const createGallery = image => { 
+//     const superscriptionRef = document.createElement('li');
+//     superscriptionRef.marker = 'none';
+
+// const imgRef = document.createElement('img');
+//     imgRef.src = image.url;
+//     imgRef.alt = image.alt;
+//     imgRef.style.width = '300px';   
+
+//     superscriptionRef.appendChild(imgRef)
+
+// return superscriptionRef
+// } 
+
+// const gallery = images.map(img => createGallery(img))
+
+// const galleryRef = document.getElementById("gallery");
+// galleryRef.style.display = 'flex';
+// console.log(galleryRef);
+
+// galleryRef.append(...gallery);
 
 
 
