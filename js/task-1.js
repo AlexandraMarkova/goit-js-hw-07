@@ -13,8 +13,9 @@ const categories = itemsRef.map(item => {
 
  
 
-
+// =========================================================================
 // Не подходящий под ТЗ вариант
+
 // const textRef = document.querySelectorAll("h2");
 // console.log(textRef)
 // const text = textRef.forEach(function (el) {
