@@ -1,13 +1,14 @@
 const inputRef = document.getElementById('font-size-control');
-console.dir(inputRef);
+
 inputRef.value = 0;
-console.dir(inputRef.value);  
 
-const spanRef = document.getElementById('text');
-console.dir(spanRef);
-spanRef.style.fontSize = "16px";    
 
-inputRef.addEventListener("focus", (event) => { 
-  
-  
-})
+   
+
+inputRef.addEventListener('input', event => {
+//   console.dir(event.target.value);
+
+  const spanRef = document.getElementById('text');
+//   console.dir(spanRef);
+  spanRef.style.fontSize = event.target.value + 'px';
+});
