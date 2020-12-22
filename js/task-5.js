@@ -5,6 +5,6 @@
     
     inputRef.addEventListener("input", (event) => {
     if (event.target.value.length === 0) {
-        return (captionRef.textContent = "незнакомец");
-    } return captionRef.textContent = event.target.value
+        captionRef.textContent = "незнакомец";
+    } else captionRef.textContent = event.target.value
 });
