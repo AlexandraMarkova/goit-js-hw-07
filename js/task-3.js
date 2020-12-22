@@ -15,15 +15,45 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+  const gallery = images.map(img => {
+  console.log(img);
+
+  const superscriptionRef = document.createElement('li');
+  console.log(superscriptionRef);
+
+  const imgRef = document.createElement('img');
+  superscriptionRef.appendChild(imgRef);
+
+  console.log(superscriptionRef);
+   return superscriptionRef;
+}
+);
+console.dir(...gallery);
+
+
+
+
+// =========================================================================
+// const createGallery = (img => {
+//   document
+//     .getElementById('gallery')
+//   .insertAdjacentHTML(
+//     'beforeEnd',
+//     `<li><img src="${img.url}" alt="${img.alt}"width = '300px' ></li>`,
+//   )
+// });
+
+// const gallery = images.map(img => createGallery(img));
  
 
-const gallery = images.forEach(img => {
-  const imgRef = document.getElementById('gallery');
-  imgRef.insertAdjacentHTML(
-    'beforeEnd',
-    `<li><img src="${img.url}" alt="${img.alt}"width = '300px' ></li>`,
-  );
-});
+// =========================================================================
+// const gallery = images.forEach(img => {
+//   document.getElementById('gallery').insertAdjacentHTML(
+//     'beforeEnd',
+//     `<li><img src="${img.url}" alt="${img.alt}"width = '300px' ></li>`,
+//   );
+// });
 
 
 

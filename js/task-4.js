@@ -8,12 +8,10 @@ const spanRef = document.getElementById("value");
 decrementBtnRef.addEventListener("click", () => {
     counterValue -= 1
     spanRef.textContent = counterValue;
-    return spanRef.textContent;
 });
 
 incrementBtnRef.addEventListener("click", () => {
   counterValue += 1;
   spanRef.textContent = counterValue;
-  return spanRef.textContent;
 });
 
