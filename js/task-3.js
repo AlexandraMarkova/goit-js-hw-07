@@ -16,20 +16,14 @@ const images = [
   },
 ];
 
-  const gallery = images.map(img => {
-  console.log(img);
+const galleryRef = document.getElementById('gallery');
 
-  const superscriptionRef = document.createElement('li');
-  console.log(superscriptionRef);
-
-  const imgRef = document.createElement('img');
-  superscriptionRef.appendChild(imgRef);
-
-  console.log(superscriptionRef);
-   return superscriptionRef;
-}
+const imagesRef = images.map(
+  elem =>
+    (elem = `<li class="gallery__item"><img src="${elem.url}" alt="${elem.alt}" width = 300px></li>`),
 );
-console.dir(...gallery);
+
+ galleryRef.insertAdjacentHTML('afterbegin', imagesRef.join(''));
 
 
 
