@@ -3,13 +3,15 @@ console.log(`В списке ${itemsRef.length} категории.`)
 
 
 const categories = itemsRef.forEach(item => {
+ console.log(item);
+ 
   const textRef = item.querySelector('h2');
   const elementsRef = item.querySelectorAll('ul li');
 
   console.log(`Категория: ${textRef.textContent}`);
   console.log(`Количество элементов: ${elementsRef.length}`);
 });
-
+ 
 
  
 

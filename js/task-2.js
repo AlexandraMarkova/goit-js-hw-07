@@ -5,7 +5,7 @@ const ingredients = [
     'Помидоры',
     'Зелень',
     'Приправы',
-];
+]; 
 
 
 const elementRef = document.getElementById('ingredients');
